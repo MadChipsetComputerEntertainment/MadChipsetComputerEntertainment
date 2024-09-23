@@ -1,4 +1,6 @@
-<p>The license of this site is MIT. </p>
-<p>BUT the Mad Chipset brand has all rights reserved.</p>
-<p>You CAN use this repository as base for your own site.</p>
-<p>You CAN'T copy this site branding (logos, names, and any other thing that could cause confusion on any user).</p>
+<p align="center">
+  <img src="https://github.com/MadChipsetComputerEntertainment/MadChipsetComputerEntertainment/blob/main/src/Blinky%20Realistic%20-%20Logo.png?raw=true" alt="LOGO 404" width="300" height="300">
+  <h1 align="center">MAD CHIPSET COMPUTER ENTERTAINMENT</h1>
+</p>
+
+All rights Reserved 2024
