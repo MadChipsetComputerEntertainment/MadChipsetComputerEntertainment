@@ -1,0 +1,131 @@
+html, body {
+    background-color: #111;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.textBox {
+    box-sizing: border-box;
+    background-color: #222;
+    width: 50%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px double #A22;
+}
+
+p {
+    text-align: center;
+    font-family: 'Electrolize';
+    font-size: 5.75vw;
+    color: #AAA;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.youtube {
+    background-image: url('src/youtube-icon.svg');
+    float: right;
+}
+
+.github {
+    background-image: url('src/github-icon.svg');
+    float: left;
+}
+
+.youtube:hover, .github:hover, .eye:hover {
+    filter: brightness(1.25);
+    filter: drop-shadow(0px 0px 12px red);
+}
+
+.menu-bar {
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    transform: translateX(-50%);
+    padding: 2px 8px 2px 8px;
+    width: 280px;
+    height: 60px;
+    background-color: #222;
+    border-radius: 8px;
+}
+
+button {
+    height: 56px;
+    width: 56px;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+}
+
+.eye-background {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #222;
+}
+
+.eye {
+    width: 140px;
+}
+
+@media only screen and (max-width: 950px) { 
+
+    .menu-bar {
+        position: absolute;
+        left: 50%;
+        top: 4px;
+        transform: translateX(-50%);
+        padding: 2px 8px 2px 8px;
+        width: 100%;
+        height: 80px;
+        background-color: #222;
+        border-radius: 8px;
+    }
+
+    button {
+        height: 82px;
+        width: 82px;
+        background-size: cover;
+        background-position: center;
+        background-color: transparent;
+        border: none;
+    }
+
+    .eye-background {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -10%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background-color: #222;
+    }
+    
+    .eye {
+        width: 140px;
+    }
+}
