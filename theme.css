@@ -1,0 +1,89 @@
+html, body {
+    background-color: #111;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-bar {
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    height: 4rem;
+    border-bottom: #AAA double;
+    padding: 0 1rem 0 1rem;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(25, 25, 25, 0.6)
+}
+
+.logo-size {
+    height: 3rem;
+    margin: 0.5rem;
+}
+
+.external-button {
+    width: 12rem;
+    text-decoration: none;
+}
+
+.external-button img {
+    width: 4rem;
+    margin: 0.5rem 0.1rem;
+    border: #222 solid;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+
+.text-underConstruction {
+    color: #333;
+    font-size: 3rem;
+    text-align: center;
+    font-family: Electrolize;
+    margin-top: 25rem;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.page-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+
+@media only screen and (max-width: 950px) { 
+    .text-underConstruction {
+        color: #333;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .external-button {
+        position:absolute;
+        top: 5rem;
+        left: 0;
+        width: 4rem;
+        text-decoration: none;
+        margin-left: 1rem;
+    }
+    
+    .external-button img {
+        width: 4rem;
+        margin: 0.1rem;
+        border: #222 solid;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+}
