@@ -2,130 +2,88 @@ html, body {
     background-color: #111;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     max-width: 100vw;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.textBox {
+.top-bar {
+    position: fixed;
     box-sizing: border-box;
-    background-color: #222;
-    width: 50%;
-    height: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 4px double #A22;
+    width: 100%;
+    height: 4rem;
+    border-bottom: #AAA double;
+    padding: 0 1rem 0 1rem;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(25, 25, 25, 0.6)
 }
 
-p {
-    text-align: center;
-    font-family: 'Electrolize';
-    font-size: 5.75vw;
-    color: #AAA;
+.logo-size {
+    height: 3rem;
+    margin: 0.5rem;
 }
 
-a {
+.external-button {
+    width: 12rem;
     text-decoration: none;
-    color: inherit;
 }
 
-.youtube {
-    background-image: url('src/youtube-icon.svg');
-    float: right;
+.external-button img {
+    width: 4rem;
+    margin: 0.5rem 0.1rem;
+    border: #222 solid;
+    border-radius: 8px;
+    box-sizing: border-box;
 }
 
-.github {
-    background-image: url('src/github-icon.svg');
+
+.text-underConstruction {
+    color: #333;
+    font-size: 3rem;
+    text-align: center;
+    font-family: Electrolize;
+    margin-top: 25rem;
+}
+
+.float-left {
     float: left;
 }
 
-.youtube:hover, .github:hover, .eye:hover {
-    filter: brightness(1.25);
-    filter: drop-shadow(0px 0px 12px red);
+.float-right {
+    float: right;
 }
 
-.menu-bar {
+.page-center {
     position: absolute;
+    top: 50%;
     left: 50%;
-    top: 4px;
-    transform: translateX(-50%);
-    padding: 2px 8px 2px 8px;
-    width: 280px;
-    height: 60px;
-    background-color: #222;
-    border-radius: 8px;
-}
-
-button {
-    height: 56px;
-    width: 56px;
-    background-size: cover;
-    background-position: center;
-    background-color: transparent;
-    border: none;
-}
-
-.eye-background {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, -10%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background-color: #222;
-}
-
-.eye {
-    width: 140px;
+    transform: translate( -50%, -50%);
 }
 
 @media only screen and (max-width: 950px) { 
-
-    .menu-bar {
-        position: absolute;
-        left: 50%;
-        top: 4px;
-        transform: translateX(-50%);
-        padding: 2px 8px 2px 8px;
-        width: 100%;
-        height: 80px;
-        background-color: #222;
-        border-radius: 8px;
+    .text-underConstruction {
+        color: #333;
+        font-size: 2rem;
+        text-align: center;
     }
 
-    button {
-        height: 82px;
-        width: 82px;
-        background-size: cover;
-        background-position: center;
-        background-color: transparent;
-        border: none;
-    }
-
-    .eye-background {
-        position: relative;
-        left: 50%;
-        transform: translate(-50%, -10%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 150px;
-        width: 150px;
-        border-radius: 50%;
-        background-color: #222;
+    .external-button {
+        position:absolute;
+        top: 5rem;
+        left: 0;
+        width: 4rem;
+        text-decoration: none;
+        margin-left: 1rem;
     }
     
-    .eye {
-        width: 140px;
+    .external-button img {
+        width: 4rem;
+        margin: 0.1rem;
+        border: #222 solid;
+        border-radius: 8px;
+        box-sizing: border-box;
     }
 }
